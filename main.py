@@ -1,5 +1,5 @@
 """
-Hue — Linux Colour Picker Application
+Hue — Colour Picker Application
 Stage 9e: Palette code search — RAL, BS4800, NCS, CSS name/code lookup,
          previews in Live Capture swatch, left-click or Alt+X to add to Picked Colours.
 
@@ -4990,7 +4990,17 @@ class HueWindow(QMainWindow):
         name_lbl.setFont(name_font)
         ver_lbl = QLabel(f"Version {APP_VERSION}")
         ver_lbl.setStyleSheet("color: grey;")
-        subtitle_lbl = QLabel("Universal screen colour picker for Linux")
+        import platform as _platform
+        _os = _platform.system()
+        if _os == "Windows":
+            _platform_str = "Windows"
+        elif _os == "Darwin":
+            _platform_str = "macOS"
+        else:
+            _platform_str = "Linux — X11 &amp; Wayland"
+
+        subtitle_lbl = QLabel(f"Universal screen colour picker for {_platform_str.replace(' &amp; Wayland', '').replace(' — X11', '')}"
+                              if _os != "Linux" else "Universal screen colour picker for Linux")
         title_col.addWidget(name_lbl)
         title_col.addWidget(ver_lbl)
         title_col.addWidget(subtitle_lbl)
@@ -5009,7 +5019,7 @@ class HueWindow(QMainWindow):
         details = QLabel(
             "<b>Colour Systems:</b> HEX, RGB, HSL, HSV, CMYK, "
             "RAL Classic, RAL Design, BS4800, NCS<br>"
-            "<b>Platform:</b> Linux — X11 &amp; Wayland<br>"
+            f"<b>Platform:</b> {_platform_str}<br>"
             "<b>Built with:</b> Python 3 and PyQt6<br><br>"
             "<b>Bad Kitty Software</b><br>"
             "Made in the UK 🇬🇧"
