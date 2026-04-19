@@ -1,6 +1,6 @@
-Hue — Colour Picker for Linux
+Hue — A Colour Picker for Linux, Windows and macOS
 Copyright © 2026 Bad Kitty Software. All Rights Reserved.
-Lead Programmer: Phil Roberts
+Programmer: Phil Roberts
 Made in the UK
 
 LICENCE TERMS
