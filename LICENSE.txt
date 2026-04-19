@@ -1,0 +1,38 @@
+Hue — Colour Picker for Linux
+Copyright © 2026 Bad Kitty Software. All Rights Reserved.
+Lead Programmer: Phil Roberts
+Made in the UK
+
+LICENCE TERMS
+-------------
+
+This software is free to use and share for non-commercial purposes only.
+
+You ARE permitted to:
+  - Use this software personally, free of charge
+  - Share this software with others in its original unmodified form
+  - Credit Bad Kitty Software when sharing
+
+You ARE NOT permitted to:
+  - Sell this software or charge any fee for access to it
+  - Include this software in any commercial product or service without
+    the express written permission of Bad Kitty Software
+  - Modify, adapt, or create derivative works based on this software
+    without the express written permission of Bad Kitty Software
+  - Reverse engineer, decompile, or disassemble this software
+  - Remove or alter this licence notice or any copyright attribution
+
+ATTRIBUTION
+-----------
+Any sharing or redistribution of this software must include this licence
+file and clearly credit:
+
+  Hue by Bad Kitty Software
+
+NO WARRANTY
+-----------
+This software is provided "as is", without warranty of any kind, express
+or implied. Bad Kitty Software shall not be liable for any damages or
+losses arising from the use of this software.
+
+For licensing enquiries or commercial use permissions, contact Bad Kitty Software.
